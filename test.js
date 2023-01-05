@@ -1,1 +1,1 @@
-alert('test.js from github');
+alert('test.jsx from github');
