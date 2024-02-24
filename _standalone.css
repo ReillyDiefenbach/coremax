@@ -11,6 +11,100 @@
  $deko-font-family: 'Trajan';
  */
 /**** 1. choose the fonts the fonts ***/
+/* flaticons */
+.fi::before {
+  font-family: "Flaticon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1.35;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+.fi-fingerprint:before {
+  content: icon-unquote(\f167); }
+
+.fi-user-male:before {
+  content: icon-unquote(\f147); }
+
+.fi-calendar:before {
+  content: icon-unquote(\f108); }
+
+.fi-dots-horizontal:before {
+  content: icon-unquote(\f153); }
+
+.fi-loud:before {
+  content: icon-unquote(\f178); }
+
+.fi-users:before {
+  content: icon-unquote(\f148); }
+
+.fi-home:before {
+  content: icon-unquote(\f1a9); }
+
+.fi-gps:before {
+  content: icon-unquote(\f14c); }
+
+.fi-support-1:before {
+  content: icon-unquote(\f123); }
+
+.fi-cogs:before {
+  content: icon-unquote(\f13c); }
+
+.fi-cog:before {
+  content: icon-unquote(\f1b8); }
+
+.fi-task-list:before {
+  content: icon-unquote(\f15b); }
+
+.fi-eq-vertical:before {
+  content: icon-unquote(\f16b); }
+
+.fi-expand:before {
+  content: icon-unquote(\f19f); }
+
+.fi-shrink:before {
+  content: icon-unquote(\f19c); }
+
+.fi-arrow-end-slim:before {
+  content: icon-unquote(\f19a); }
+
+.fi-arrow-down-slim:before {
+  content: icon-unquote(\f198); }
+
+.fi-arrow-upload:before {
+  content: icon-unquote(\f1da); }
+
+.fi-power:before {
+  content: icon-unquote(\f133); }
+
+.fi-dots-vertical-full:before {
+  content: icon-unquote(\f1d0); }
+
+.fi-dots-horizontal-full:before {
+  content: icon-unquote(\f1d2); }
+
+.fi-close:before {
+  content: icon-unquote(\f103); }
+
+.fi-pencil:before {
+  content: icon-unquote(\f1b2); }
+
+.fi-arrow-right-3:before {
+  content: icon-unquote(\f1b9); }
+
+.fi-loading-dots:before {
+  content: icon-unquote(\f131); }
+
+.fi-eye:before {
+  content: icon-unquote(\f18b); }
+
+.fi-eye-disabled:before {
+  content: icon-unquote(\f18a); }
 /**** 2. the colors ***/
 /*$grid-breakpoints: (
  xs: 0,
@@ -2268,37 +2362,7 @@ body.editorModus .editorButton {
   .burger.burger-slide.open .burger-lines:after {
     transform: rotate(45deg); }
 /* typography */
-/* add font in _variables/_wolfi_variables ... change the first lines */
-@font-face {
-  font-family: "summernote";
-  font-style: normal;
-  font-weight: 400;
-  font-display: auto;
-  src: url("/assets/fonts/summernote.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/summernote.woff2") format("woff2"), url("/assets/fonts/summernote.woff") format("woff"), url("/assets/fonts/summernote.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Gotham Rounded Medium';
-  src: url(/assets/fonts/gotham/GothamRounded-Medium.eot);
-  src: url(/assets/fonts/gotham/GothamRounded-Medium.eot?#iefix) format('embedded-opentype'), url(/assets/fonts/gotham/GothamRounded-Medium.woff2) format('woff2'), url(/assets/fonts/gotham/GothamRounded-Medium.woff) format('woff'), url(/assets/fonts/gotham/GothamRounded-Medium.ttf) format('truetype'), url(/assets/fonts/gotham/GothamRounded-Medium.svg#GothamRounded-Medium) format('svg');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'GothamBold';
-  src: url(/assets/fonts/gotham/GothamRounded-Bold.eot);
-  src: url(/assets/fonts/gotham/GothamRounded-Bold.eot?#iefix) format('embedded-opentype'), url(/assets/fonts/gotham/GothamRounded-Bold.woff2) format('woff2'), url(/assets/fonts/gotham/GothamRounded-Bold.woff) format('woff'), url(/assets/fonts/gotham/GothamRounded-Bold.ttf) format('truetype'), url(/assets/fonts/gotham/GothamRounded-Bold.svg#GothamRounded-Bold) format('svg');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Raleway';
-  src: url(/assets/fonts/raleway/Raleway-Medium.ttf) format('truetype'); }
-
-@font-face {
-  font-family: 'Roboto Slab';
-  src: url(/assets/fonts/Roboto_Slab/RobotoSlab.ttf) format('truetype'); }
+/*@import  'typography/fontfaces';*/
 /* power-button */
 .icon-top {
   color: var(--primary);
@@ -2449,114 +2513,6 @@ body.sidebar-mobile #logoutTop {
 [aria-expanded="true"] .group-icon > span:last-child, [aria-expanded="true"] .group-icon > i:last-child {
   display: inline-block; }
 
-@font-face {
-  font-family: "Flaticon";
-  src: local('Flaticon'), url("/assets/fonts/flaticon/Flaticon.woff2") format('woff2'), url("/assets/fonts/flaticon/Flaticon.woff") format('woff'), url("/assets/fonts/flaticon/Flaticon.ttf") format('truetype'), url("/assets/fonts/flaticon/Flaticon.eot") format('embedded-opentype'), url("/assets/fonts/flaticon/Flaticon.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: "Flaticon";
-    src: url("/assets/fonts/flaticon/Flaticon.svg#Flaticon") format("svg"); } }
-
-.fi::before {
-  font-family: "Flaticon" !important;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  line-height: 1.35;
-  text-decoration: inherit;
-  text-rendering: optimizeLegibility;
-  text-transform: none;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased; }
-
-.fi-fingerprint:before {
-  content: "\f167"; }
-
-.fi-user-male:before {
-  content: "\f147"; }
-
-.fi-calendar:before {
-  content: "\f108"; }
-
-.fi-dots-horizontal:before {
-  content: "\f153"; }
-
-.fi-loud:before {
-  content: "\f178"; }
-
-.fi-users:before {
-  content: "\f148"; }
-
-.fi-home:before {
-  content: "\f1a9"; }
-
-.fi-gps:before {
-  content: "\f14c"; }
-
-.fi-support-1:before {
-  content: "\f123"; }
-
-.fi-cogs:before {
-  content: "\f13c"; }
-
-.fi-cog:before {
-  content: "\f1b8"; }
-
-.fi-task-list:before {
-  content: "\f15b"; }
-
-.fi-eq-vertical:before {
-  content: "\f16b"; }
-
-.fi-expand:before {
-  content: "\f19f"; }
-
-.fi-shrink:before {
-  content: "\f19c"; }
-
-.fi-arrow-end-slim:before {
-  content: "\f19a"; }
-
-.fi-arrow-down-slim:before {
-  content: "\f198"; }
-
-.fi-arrow-upload:before {
-  content: "\f1da"; }
-
-.fi-power:before {
-  content: "\f133"; }
-
-.fi-dots-vertical-full:before {
-  content: "\f1d0"; }
-
-.fi-dots-horizontal-full:before {
-  content: "\f1d2"; }
-
-.fi-close:before {
-  content: "\f103"; }
-
-.fi-pencil:before {
-  content: "\f1b2"; }
-
-.fi-arrow-right-3:before {
-  content: "\f1b9"; }
-
-.fi-loading-dots:before {
-  content: "\f131"; }
-
-.fi-eye:before {
-  content: "\f18b"; }
-
-.fi-eye-disabled:before {
-  content: "\f18a"; }
-/*.fi-star:before { content: icon-unquote($fi-star); }
- .fi-star-half:before { content: icon-unquote($fi-start-half); }
- .fi-star-full:before { content: icon-unquote($fi-star-full); }*/
 .flexCell h1, .flexCell h2, .flexCell h3, .flexCell h4, .flexCell .faq_list .kategoryField, .faq_list .flexCell .kategoryField, .flexCell .handbuch_list .kategoryField, .handbuch_list .flexCell .kategoryField, .flexCell h5, .flexCell h6, .flexCell p, .flexCell small {
   color: var(--bs-body-color) !important;
   padding: 2px 0 2px 0;
@@ -4038,6 +3994,9 @@ body[data-period="E"] #student input:not([id^=E]), body[data-period="E"] #studen
 
 .readonlyStatus #nextButton {
   display: none !important; }
+
+.readonlyStatus #closeButton {
+  display: block !important; }
 
 #UntBez {
   display: flex;
